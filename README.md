@@ -1,9 +1,7 @@
-# azureSqlDemo
-
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - azureSqlDemo
+name: Build and deploy JAR app to Azure Web App - springbootMySqlDemo
 
 on:
   push:
@@ -49,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'azureSqlDemo'
+          app-name: 'springbootMySqlDemo'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_250e84e248084807b1c2122c4ea6785e }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_39db9b5d1011414a9b7fd1e4fc60efc0 }}
           package: '*.jar'
